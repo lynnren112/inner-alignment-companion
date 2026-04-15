@@ -1,7 +1,56 @@
 # Inner Alignment Companion
 
+![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)
+![Skill](https://img.shields.io/badge/type-Hermes%20skill-blue)
+![Language](https://img.shields.io/badge/language-zh--CN-red)
+![Status](https://img.shields.io/badge/status-public%20repo-ready-brightgreen)
+
 > A Hermes-compatible skill for emotional clarity, belief inspection, and aligned next steps.  
 > 一个面向 Hermes / agent skill 系统的内在对齐陪伴 skill，用来帮助人从情绪触发中看见结构、恢复主体性，并找到更真实的下一步。
+
+---
+
+## Table of Contents
+
+- [Quick Start](#quick-start)
+- [中文简介](#中文简介)
+- [English Summary](#english-summary)
+- [What this skill is for](#what-this-skill-is-for)
+- [Who this is for / not for](#who-this-is-for--not-for)
+- [Core orientation](#core-orientation)
+- [Default output structure](#default-output-structure)
+- [Installation](#installation)
+- [How to invoke it](#how-to-invoke-it)
+- [Example output shape](#example-output-shape)
+- [Repository structure](#repository-structure)
+- [Reuse this repo as a template](#reuse-this-repo-as-a-template)
+- [Examples](#examples)
+- [Boundaries and safety](#boundaries-and-safety)
+- [Sources of inspiration](#sources-of-inspiration)
+- [License](#license)
+
+---
+
+## Quick Start
+
+### Install locally into Hermes
+
+```bash
+mkdir -p ~/.hermes/skills/personal/inner-alignment-companion
+cp SKILL.md ~/.hermes/skills/personal/inner-alignment-companion/SKILL.md
+```
+
+### Invoke it
+
+```text
+请用 inner-alignment-companion 帮我拆一下：我最近总被关系里的沉默触发。
+```
+
+### Learn the shape quickly
+
+- Read [`SKILL.md`](SKILL.md) for the full agent-facing definition
+- Read [`examples/`](examples/) for concrete usage scenarios
+- Read [`references/README.md`](references/README.md) for boundaries and orientation
 
 ---
 
@@ -115,18 +164,12 @@ This skill usually responds in 6 parts:
 
 If you already use Hermes and just want to install the skill locally, copy `SKILL.md` into your skills library.
 
-Typical pattern:
-
 ```bash
 mkdir -p ~/.hermes/skills/personal/inner-alignment-companion
 cp SKILL.md ~/.hermes/skills/personal/inner-alignment-companion/SKILL.md
 ```
 
-Then load or invoke it from Hermes using the skill name:
-
-```text
-inner-alignment-companion
-```
+Then invoke it by skill name inside Hermes.
 
 ### Option 2 — Clone this repository and keep it as the source of truth
 
@@ -175,6 +218,19 @@ You can trigger it directly with prompts like:
 
 ---
 
+## Example output shape
+
+A typical answer is structured like this:
+
+1. **你现在真正卡住的点** — name the real knot, not just the surface story
+2. **事实 vs 定义** — separate event from meaning-making
+3. **被触发的核心信念** — identify 1–2 likely active beliefs
+4. **这件事在反馈你什么** — interpret the emotion/event as feedback, not punishment
+5. **更对齐的理解方式** — offer a clearer and less self-harming frame
+6. **今天可以做的一小步** — end with a light, concrete next step
+
+---
+
 ## Repository structure
 
 ```text
@@ -183,13 +239,18 @@ inner-alignment-companion/
 ├─ SKILL.md
 ├─ CHANGELOG.md
 ├─ LICENSE
+├─ PUBLISHING-CHECKLIST.md
 ├─ examples/
 │  ├─ README.md
 │  ├─ anxiety-after-no-reply.md
 │  ├─ relationship-boundary.md
 │  └─ self-doubt-procrastination.md
-└─ references/
-   └─ README.md
+├─ references/
+│  └─ README.md
+└─ templates/
+   ├─ CHANGELOG_TEMPLATE.md
+   ├─ README_TEMPLATE.md
+   └─ SKILL_FRONTMATTER_TEMPLATE.yaml
 ```
 
 ### File roles
@@ -198,7 +259,30 @@ inner-alignment-companion/
 - `SKILL.md`: the actual Hermes skill definition
 - `examples/`: realistic example prompts and response shapes
 - `references/`: orientation, boundaries, and source notes
+- `templates/`: starting points for your next public skill repo
+- `PUBLISHING-CHECKLIST.md`: step-by-step release checklist for future skill repos
 - `CHANGELOG.md`: version history for the public repo
+
+---
+
+## Reuse this repo as a template
+
+If you want to publish more public Hermes skills, you can use this repo as a repeatable pattern.
+
+### Recommended workflow
+
+1. Copy this repo or just copy the `templates/` folder
+2. Rename the skill, README title, and install path
+3. Replace the core orientation, examples, and references
+4. Fill the publishing checklist before making the repo public
+5. Keep `SKILL.md` as the single install entry
+
+Start here:
+
+- [`PUBLISHING-CHECKLIST.md`](PUBLISHING-CHECKLIST.md)
+- [`templates/README_TEMPLATE.md`](templates/README_TEMPLATE.md)
+- [`templates/CHANGELOG_TEMPLATE.md`](templates/CHANGELOG_TEMPLATE.md)
+- [`templates/SKILL_FRONTMATTER_TEMPLATE.yaml`](templates/SKILL_FRONTMATTER_TEMPLATE.yaml)
 
 ---
 

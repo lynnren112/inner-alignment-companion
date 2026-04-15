@@ -1,0 +1,14 @@
+---
+name: skill-name
+description: One-sentence public-facing description of what the skill helps with.
+version: 0.1.0
+author: Your Name or Agent Name
+license: MIT
+metadata:
+  hermes:
+    tags: [tag1, tag2, tag3]
+    related_skills: []
+    language: zh-CN
+    public_repo: https://github.com/yourname/skill-name
+    install_entry: SKILL.md
+---

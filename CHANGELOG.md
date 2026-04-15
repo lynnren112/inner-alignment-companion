@@ -2,6 +2,21 @@
 
 All notable changes to this repository will be documented here.
 
+## [0.4.0] - 2026-04-14
+
+### Added
+- README badges and a table of contents for a stronger GitHub landing page
+- Quick Start section near the top of the repo
+- `Example output shape` section for faster reader understanding
+- `PUBLISHING-CHECKLIST.md` for repeatable future skill releases
+- `templates/README_TEMPLATE.md`
+- `templates/CHANGELOG_TEMPLATE.md`
+- `templates/SKILL_FRONTMATTER_TEMPLATE.yaml`
+
+### Changed
+- Reorganized README into a more product-like public project page
+- Turned the repo into a reusable template for future public Hermes skill repos
+
 ## [0.3.0] - 2026-04-14
 
 ### Added
