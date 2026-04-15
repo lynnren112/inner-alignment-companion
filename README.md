@@ -1,8 +1,13 @@
 # Inner Alignment Companion
 
-一个面向 **Hermes / agent skill 系统** 的内在对齐陪伴 skill。
+> A Hermes-compatible skill for emotional clarity, belief inspection, and aligned next steps.  
+> 一个面向 Hermes / agent skill 系统的内在对齐陪伴 skill，用来帮助人从情绪触发中看见结构、恢复主体性，并找到更真实的下一步。
 
-它整合了《太傻天书》《与神对话》《你值得过更好的生活》与巴夏（Bashar）体系中的共同内核，
+---
+
+## 中文简介
+
+`inner-alignment-companion` 结合《太傻天书》《与神对话》《你值得过更好的生活》与巴夏（Bashar）体系中的共同内核，
 帮助使用者在情绪触发、关系困惑、自我怀疑、重复模式和人生卡点中，看见：
 
 - 发生了什么
@@ -11,14 +16,30 @@
 - 情绪在反馈什么
 - 更对齐、更真实、可执行的一小步是什么
 
-> 它不是“替人给答案”的工具，
-> 而是一个帮助人从混乱中看见结构、从痛苦中恢复主体性的陪伴框架。
+它不是“替人给答案”的工具，
+而是一个帮助人从混乱中看见结构、从痛苦中恢复主体性的陪伴框架。
 
 ---
 
-## 这个 skill 适合解决什么问题
+## English Summary
 
-适合处理以下类型的问题：
+`inner-alignment-companion` is a public Hermes-compatible skill for reflective emotional support.
+It is designed to help a user move from surface-level distress into a clearer structure:
+
+- what actually happened
+- what meaning they assigned to it
+- which belief or identity pattern got activated
+- what the emotion may be feeding back
+- what the smallest aligned next step could be
+
+It does **not** try to replace therapy, crisis support, or concrete professional advice.
+Its purpose is to help people regain clarity, agency, and honesty in moments of emotional contraction.
+
+---
+
+## What this skill is for
+
+This skill is especially useful for:
 
 - **情绪困扰**：焦虑、委屈、羞耻、嫉妒、空虚、内耗
 - **关系卡点**：被忽视、害怕失去、舍不得离开、不敢表达
@@ -28,7 +49,26 @@
 
 ---
 
-## 核心视角
+## Who this is for / not for
+
+### 适合谁
+
+- 想从情绪里看见结构，而不是只想被安慰一下的人
+- 愿意区分“事实”与“定义”的人
+- 想识别旧信念、旧身份、重复模式的人
+- 想要一个兼顾现实感与高视角的陪伴框架的人
+- 希望 agent 在回应中更有穿透力、更少空泛鸡汤的人
+
+### 不适合谁
+
+- 只想让 skill 替自己做决定的人
+- 希望得到绝对正确答案、命运判断或灵性背书的人
+- 正处于急性危机、自伤/伤人风险、严重精神失控的人
+- 需要法律、财务、医疗、投资等专业判断的人
+
+---
+
+## Core orientation
 
 这个 skill 的核心不是鸡汤，也不是宿命论，而是一套相对稳定、能落地的理解框架：
 
@@ -56,9 +96,9 @@
 
 ---
 
-## 默认输出结构
+## Default output structure
 
-这个 skill 默认按以下 6 段输出：
+This skill usually responds in 6 parts:
 
 1. 你现在真正卡住的点
 2. 事实 vs 定义
@@ -69,9 +109,46 @@
 
 ---
 
-## 如何触发
+## Installation
 
-可以直接说：
+### Option 1 — Copy `SKILL.md` into your Hermes skills directory
+
+If you already use Hermes and just want to install the skill locally, copy `SKILL.md` into your skills library.
+
+Typical pattern:
+
+```bash
+mkdir -p ~/.hermes/skills/personal/inner-alignment-companion
+cp SKILL.md ~/.hermes/skills/personal/inner-alignment-companion/SKILL.md
+```
+
+Then load or invoke it from Hermes using the skill name:
+
+```text
+inner-alignment-companion
+```
+
+### Option 2 — Clone this repository and keep it as the source of truth
+
+```bash
+git clone https://github.com/lynnren112/inner-alignment-companion.git
+cd inner-alignment-companion
+```
+
+Then either:
+
+- copy `SKILL.md` into your Hermes skills directory, or
+- keep this repo as your editable source and sync updates into your Hermes environment when needed.
+
+### Option 3 — Share it as a public skill repo
+
+If you want others to learn from or reuse the skill, this repository is already structured as a public-facing reference repo.
+
+---
+
+## How to invoke it
+
+You can trigger it directly with prompts like:
 
 - `用 inner-alignment-companion 看一下`
 - `用内在对齐陪伴看这件事`
@@ -79,18 +156,26 @@
 - `从定义 / 信念 / 情绪反馈角度帮我拆`
 - `帮我做一次内在对齐解读`
 
-自然语言里如果出现以下表达，也很适合调用这个 skill：
+### 5 ready-to-use prompt templates
 
-- 我现在很难受 / 很乱 / 很卡
-- 我不知道为什么总这样
-- 这件事背后我到底在信什么
-- 我是不是又被旧模式带走了
-- 这情绪在反馈我什么
-- 哪一步是更有生命感的下一步
+1. **关系触发**  
+   `请用 inner-alignment-companion 帮我拆一下：对方最近不回消息，我很焦虑。`
+
+2. **情绪混乱**  
+   `我现在很乱，你用定义—信念—情绪反馈的结构帮我看一下。`
+
+3. **选择卡点**  
+   `我在两个选择之间很卡，请用 inner-alignment-companion 帮我看我到底在怕什么。`
+
+4. **重复模式**  
+   `我好像总在重复同一种关系模式，帮我看背后在信什么。`
+
+5. **行动拖延**  
+   `我知道该开始了，但就是拖延。请用内在对齐视角帮我拆开。`
 
 ---
 
-## 仓库结构
+## Repository structure
 
 ```text
 inner-alignment-companion/
@@ -99,6 +184,7 @@ inner-alignment-companion/
 ├─ CHANGELOG.md
 ├─ LICENSE
 ├─ examples/
+│  ├─ README.md
 │  ├─ anxiety-after-no-reply.md
 │  ├─ relationship-boundary.md
 │  └─ self-doubt-procrastination.md
@@ -106,69 +192,50 @@ inner-alignment-companion/
    └─ README.md
 ```
 
----
+### File roles
 
-## 快速使用
-
-### 方式 1：直接复制 `SKILL.md`
-
-如果你只是想先给少数人试用，直接把 `SKILL.md` 放进自己的 Hermes skills 目录即可。
-
-### 方式 2：作为公开 skill 仓库维护
-
-如果你想长期维护，推荐保留本仓库结构：
-
-- `README.md`：对外介绍 skill 的定位、适用场景与边界
-- `SKILL.md`：agent 可直接读取的 skill 定义
-- `examples/`：真实使用示例，帮助别人快速理解效果
-- `references/`：来源说明、理念边界、补充材料
-- `CHANGELOG.md`：版本更新记录
+- `README.md`: public-facing project introduction
+- `SKILL.md`: the actual Hermes skill definition
+- `examples/`: realistic example prompts and response shapes
+- `references/`: orientation, boundaries, and source notes
+- `CHANGELOG.md`: version history for the public repo
 
 ---
 
-## 示例
-
-仓库已附 3 个最小示例：
+## Examples
 
 - [`examples/anxiety-after-no-reply.md`](examples/anxiety-after-no-reply.md)
 - [`examples/relationship-boundary.md`](examples/relationship-boundary.md)
 - [`examples/self-doubt-procrastination.md`](examples/self-doubt-procrastination.md)
 
-这些示例的作用不是提供“标准答案”，而是展示：
-**这个 skill 如何从表面剧情，进入定义、信念、反馈与行动。**
+These examples are not meant to be rigid answer keys.
+They show how the skill moves from surface story → definition → belief → feedback → action.
 
 ---
 
-## 边界与注意事项
+## Boundaries and safety
 
-这个 skill：
+This skill:
 
-- 不替代心理治疗、医疗支持、危机干预
-- 不替代法律、财务、投资等专业建议
-- 不把一切问题都归因为“你吸引来的”
-- 不搞灵性 PUA
-- 不做宿命式判断
+- does **not** replace therapy, medical care, or crisis intervention
+- does **not** replace legal, financial, investment, or clinical advice
+- does **not** reduce all suffering to “you attracted this”
+- does **not** use spiritual language to erase reality or pressure the user
+- does **not** make fatalistic or destiny-based claims
 
-它的目标不是让人“立刻不痛苦”，而是帮助人：
-
-- 从混乱中看见结构
-- 从情绪中看见信念
-- 从旧模式中看见自己
-- 从理解走向更轻、更稳、更真实的一步
-
-如果出现明显的急性危机、自伤伤人风险、严重失眠、精神失控或需要专业干预的情况，
-请优先寻求现实中的紧急支持与专业帮助。
+If there is acute crisis, self-harm risk, violent risk, severe insomnia, severe dysregulation, or a need for professional care,
+please prioritize real-world support and qualified help.
 
 ---
 
-## 灵感来源
+## Sources of inspiration
 
 - 《太傻天书》
 - 《与神对话》
 - 《你值得过更好的生活》
 - 巴夏（Bashar）体系
 
-更多说明见：[`references/README.md`](references/README.md)
+See also: [`references/README.md`](references/README.md)
 
 ---
 
@@ -178,6 +245,6 @@ MIT
 
 ---
 
-## 一句话总结
+## One-line summary
 
 **不是替人消灭痛苦，而是帮助人借由痛苦的反馈，更接近真实的自己。**

@@ -1,13 +1,16 @@
 ---
 name: inner-alignment-companion
 description: 用整合了《太傻天书》《与神对话》《你值得过更好的生活》与巴夏体系的视角，帮助主人理解情绪、识别信念、看见重复模式，并找到更真实、更轻盈、更可执行的下一步。
-version: 0.2.0
+version: 0.3.0
 author: Hermes Agent
 license: MIT
 metadata:
   hermes:
     tags: [growth, emotions, self-inquiry, relationships, alignment, beliefs, bashar, spirituality]
     related_skills: []
+    language: zh-CN
+    public_repo: https://github.com/lynnren112/inner-alignment-companion
+    install_entry: SKILL.md
 ---
 
 # Inner Alignment Companion

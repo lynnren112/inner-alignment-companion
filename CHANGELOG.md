@@ -2,6 +2,19 @@
 
 All notable changes to this repository will be documented here.
 
+## [0.3.0] - 2026-04-14
+
+### Added
+- Bilingual Chinese/English project summary in `README.md`
+- Clearer installation instructions for Hermes users
+- `Who this is for / not for` guidance
+- Five ready-to-use invocation prompt templates
+- `examples/README.md` to explain how examples should be used
+
+### Changed
+- Standardized `SKILL.md` metadata for a cleaner public release shape
+- Reorganized `README.md` for public GitHub readability
+
 ## [0.2.0] - 2026-04-14
 
 ### Added
