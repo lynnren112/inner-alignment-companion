@@ -2,6 +2,8 @@
 
 Use this checklist before publishing your next skill repository.
 
+For the higher-level system behind this checklist, see [`PUBLIC_HERMES_SKILL_STANDARD.md`](PUBLIC_HERMES_SKILL_STANDARD.md).
+
 ## 1. Core identity
 
 - [ ] Repo name matches the skill name

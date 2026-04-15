@@ -29,6 +29,7 @@
 - [Sources of inspiration](#sources-of-inspiration)
 - [License](#license)
 - [Contributing](#contributing)
+- [Public skill standard](#public-skill-standard)
 
 ---
 
@@ -337,6 +338,16 @@ If you want to improve this skill or reuse the repo pattern, start here:
 - [`CONTRIBUTING.md`](CONTRIBUTING.md)
 - [`PUBLISHING-CHECKLIST.md`](PUBLISHING-CHECKLIST.md)
 - [`GITHUB_REPO_METADATA.md`](GITHUB_REPO_METADATA.md)
+
+---
+
+## Public skill standard
+
+If you want to turn this repo into a repeatable standard for your broader public skill series, use:
+
+- [`PUBLIC_HERMES_SKILL_STANDARD.md`](PUBLIC_HERMES_SKILL_STANDARD.md)
+- [`PUBLISHING-CHECKLIST.md`](PUBLISHING-CHECKLIST.md)
+- [`templates/`](templates/)
 
 ---
 

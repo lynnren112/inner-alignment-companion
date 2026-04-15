@@ -2,6 +2,14 @@
 
 All notable changes to this repository will be documented here.
 
+## [0.6.0] - 2026-04-14
+
+### Added
+- `PUBLIC_HERMES_SKILL_STANDARD.md` defining the broader standard for public Hermes skill repos
+
+### Changed
+- Linked the new standard from `README.md` and `PUBLISHING-CHECKLIST.md`
+
 ## [0.5.0] - 2026-04-14
 
 ### Added
