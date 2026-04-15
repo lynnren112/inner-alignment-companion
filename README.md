@@ -28,6 +28,7 @@
 - [Boundaries and safety](#boundaries-and-safety)
 - [Sources of inspiration](#sources-of-inspiration)
 - [License](#license)
+- [Contributing](#contributing)
 
 ---
 
@@ -326,6 +327,16 @@ See also: [`references/README.md`](references/README.md)
 ## License
 
 MIT
+
+---
+
+## Contributing
+
+If you want to improve this skill or reuse the repo pattern, start here:
+
+- [`CONTRIBUTING.md`](CONTRIBUTING.md)
+- [`PUBLISHING-CHECKLIST.md`](PUBLISHING-CHECKLIST.md)
+- [`GITHUB_REPO_METADATA.md`](GITHUB_REPO_METADATA.md)
 
 ---
 

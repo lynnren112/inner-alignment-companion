@@ -2,6 +2,19 @@
 
 All notable changes to this repository will be documented here.
 
+## [0.5.0] - 2026-04-14
+
+### Added
+- `.github/ISSUE_TEMPLATE/bug_report.md`
+- `.github/ISSUE_TEMPLATE/feature_request.md`
+- `.github/ISSUE_TEMPLATE/config.yml`
+- `.github/pull_request_template.md`
+- `CONTRIBUTING.md`
+- `GITHUB_REPO_METADATA.md` with suggested repo description and topics
+
+### Changed
+- Added contribution entry points to `README.md`
+
 ## [0.4.0] - 2026-04-14
 
 ### Added
